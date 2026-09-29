@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta Te Ti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>TA TE TI</h1>
+
+        <div class="marcador">
+            <div class="jugador" id="marcadorX">
+                <span class="ficha-x">X</span>
+                <span id="puntosX">0</span>
+            </div>
+            <div class="jugador" id="marcadorO">
+                <span class="ficha-o">O</span>
+                <span id="puntosO">0</span>
+            </div>
+        </div>
+
+        <p id="mensaje">Turno de X - colocá una ficha</p>
+
+        <div class="tablero" id="tablero">
+            <div class="casilla" data-pos="0"></div>
+            <div class="casilla" data-pos="1"></div>
+            <div class="casilla" data-pos="2"></div>
+            <div class="casilla" data-pos="3"></div>
+            <div class="casilla" data-pos="4"></div>
+            <div class="casilla" data-pos="5"></div>
+            <div class="casilla" data-pos="6"></div>
+            <div class="casilla" data-pos="7"></div>
+            <div class="casilla" data-pos="8"></div>
+        </div>
+
+        <div class="botones">
+            <button id="btnReiniciar">Nueva partida</button>
+            <button id="btnResetear">Reiniciar marcador</button>
+        </div>
+
+        <div class="reglas">
+            <h2>Reglas</h2>
+            <ul>
+                <li>Cada jugador tiene 3 fichas.</li>
+                <li>Se turnan para colocarlas en una casilla vacía.</li>
+                <li>Cuando están las 6 fichas en el tablero, se mueven a una casilla vecina que esté libre.</li>
+                <li>Gana el que logra 3 en línea (horizontal, vertical o diagonal).</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
